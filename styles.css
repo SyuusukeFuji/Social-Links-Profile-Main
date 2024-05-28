@@ -1,0 +1,101 @@
+:root{
+ --White: hsl(0, 0%, 100%);
+ --Grey: hsl(0, 0%, 20%);
+ --DarkGrey: hsl(0, 0%, 12%);
+ --OffBlack: hsl(0, 0%, 8%);
+ --Green: hsl(75, 94%, 57%);
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: var(--OffBlack);
+    max-width: 1440px;
+}
+
+main{
+    min-height: 100vh;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#outer-card{
+    min-width: 30%;
+    height: 65%;
+    background-color: var(--DarkGrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+
+}
+
+#avatar-picture{
+    border-radius: 50%;
+    height: 6rem;
+}
+
+#profile-name{
+    color: var(--White);
+    font-size: 1.2rem;
+}
+
+#location{
+    color: var(--Green);
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+#description{
+    color: var(--White);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+a.links{
+    text-decoration: none;
+    width: 90%;
+    background-color: var(--Grey);
+    margin-bottom: 0.3rem;
+    color: var(--White);
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-radius: 0.4rem;
+}
+
+a:hover, a:focus{
+    color: var(--OffBlack);
+    background-color: var(--Green);
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; color: white}
+    .attribution a {
+         color: hsl(228, 45%, 44%); }
+
+@media  screen and (max-width: 375px) {
+    #outer-card{
+        
+        min-width: 90vw;
+    }
+}
